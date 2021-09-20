@@ -7,7 +7,10 @@
 /************************************
 TAG
 ************************************/
-
+body{
+    background-color: #000;
+    color: #dcdcdc;
+}
 
 /************************************
 ID
@@ -17,3 +20,14 @@ ID
 /************************************
 CLASSI
 ************************************/
+.header__container{
+    padding: 15px;
+    text-align: right;
+}
+.header__container button{
+    background-color: #373737;
+    border: 0;
+    padding: 5px;
+    color: #dcdcdc;
+    border-radius: 5px;
+}
