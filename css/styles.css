@@ -31,3 +31,65 @@ CLASSI
     color: #dcdcdc;
     border-radius: 5px;
 }
+
+.navigation {
+    position: relative;
+}
+.navigation{
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 15px;
+    color: #7f7f7f;
+}
+.navigation i:hover{
+    color: #2ebaff;
+}
+.navigation strong{
+    color: #fff;
+}
+.navigation--left{
+    left:0;
+}
+.navigation--right{
+    right:0;
+}
+
+.user__container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    overflow: hidden;
+}
+.user__container > .user{
+    width: calc(100% / 5);
+    height: calc(100% / 4);
+    min-width: 200px;
+    max-width: 300px;
+    min-height: 100px;
+    max-height: 150px;
+    flex-shrink: 0;
+}
+.user__container > .user img{
+    width: 300px;
+    max-height: 150px;
+    object-fit: cover;
+    border: 5px solid #000;
+    transition: border-color 0.3s;
+}
+.user__container > .user img:hover {
+    border-color: #6bc419;
+  }
+
+.footer__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #212324;
+}
+.footer__sx .arrow__up,
+.footer__sx .icon{
+    display: inline-block;
+}
