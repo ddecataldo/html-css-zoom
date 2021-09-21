@@ -11,6 +11,9 @@ body{
     background-color: #000;
     color: #dcdcdc;
 }
+main{
+    height: calc(100vh - 56px - 70px);
+}
 
 /************************************
 ID
@@ -71,6 +74,20 @@ CLASSI
     min-height: 100px;
     max-height: 150px;
     flex-shrink: 0;
+    position: relative;
+}
+.user__container > .user p{
+    position: absolute;
+    bottom: 5px;
+    left: 5px;
+    background-color: rgba(0,0,0,0.5);
+    color:#fff;
+    padding: 5px;
+}
+.user__container > .user:hover i:before{
+    content: "\f130";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
 }
 .user__container > .user img{
     width: 300px;
@@ -83,13 +100,35 @@ CLASSI
     border-color: #6bc419;
   }
 
+
 .footer__container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: #212324;
 }
-.footer__sx .arrow__up,
-.footer__sx .icon{
+.container__icon{
     display: inline-block;
+    text-align: center;
+    padding:10px 20px;
+}
+.container__icon:hover{
+    background-color:#4b4c4f;
+    border-radius: 10px;
+}
+.icon,
+.arrow{
+    display: inline-block;
+}
+.arrow--up{
+    vertical-align: top;
+}
+.icon--share{
+    color: #4bc800;
+}
+.meeting{
+    background-color: #4b4c4f;
+    color: #ed534b;
+    line-height: 68px;
+    padding: 0 20px;
 }
