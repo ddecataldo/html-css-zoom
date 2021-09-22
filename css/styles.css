@@ -11,8 +11,16 @@ body{
     background-color: #000;
     color: #dcdcdc;
 }
+header{
+    height: 56px;
+}
 main{
     height: calc(100vh - 56px - 70px);
+    overflow: hidden;
+    display: flex;
+}
+footer{
+    height: 70px;
 }
 
 /************************************
